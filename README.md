@@ -30,6 +30,11 @@ After successfully building the container in step 1 we need to run the container
 docker container run -d -p 8080:8080 -v /var/run/docker.sock:/var/run/docker.sock jenkins-docker
 ```
 
+## Start existing container
+```
+docker start container_id
+```
+
 Note: The docker daemon running on host machine must be compatible with docker client running in Jenkins container. check the version of the host with docker --version and install the appropriate version of docker client inside the Jenkins container.
 
 # Conclusion:
