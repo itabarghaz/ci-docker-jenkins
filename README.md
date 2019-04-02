@@ -30,6 +30,21 @@ After successfully building the container in step 1 we need to run the container
 docker container run -d -p 8080:8080 -v /var/run/docker.sock:/var/run/docker.sock jenkins-docker
 ```
 
+## Create jenkins job to build automatically from github
+
+``` 
+Gestion de code source > Git > Repository URL 
+Gestion de code source > Git > Build > shell
+``` 
+
+## Create Credentials Docker hub in Jenkins
+
+```
+user : ******
+pwd : *******
+id : docker-hub
+```
+
 ## Start existing container
 ```
 docker start container_id
